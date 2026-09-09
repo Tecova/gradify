@@ -10,6 +10,8 @@ import Teachers from "./pages/Teachers";
 import Results from "./pages/Results";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import ClientDashboard from "./pages/ClientDashboard";
+import AdminDashboard from "./pages/AdminDashboard";
 
 function Router() {
   return (
@@ -18,6 +20,8 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/login" component={Login} />
+      <Route path="/client-dashboard" component={ClientDashboard} />
+      <Route path="/admin-dashboard" component={AdminDashboard} />
       <Route path="/teachers" component={Teachers} />
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/students" component={Dashboard} />
