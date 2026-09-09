@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Teachers from "./pages/Teachers";
+import Results from "./pages/Results";
 
 function Router() {
   return (
@@ -16,7 +17,7 @@ function Router() {
       <Route path="/teachers" component={Teachers} />
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/students" component={Dashboard} />
-      <Route path="/results" component={Dashboard} />
+      <Route path="/results" component={Results} />
       <Route path="/analytics" component={Dashboard} />
       <Route path="/attendance" component={Dashboard} />
       <Route path="/assignments" component={Dashboard} />
