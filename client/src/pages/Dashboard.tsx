@@ -64,7 +64,7 @@ const students = [
 ];
 
 const navSections = [
-  { label: "Workspace", items: [{ label: "Overview", path: "/dashboard", icon: LayoutDashboard }, { label: "Students", path: "/students", icon: Users }, { label: "Results", path: "/results", icon: ClipboardList }] },
+  { label: "Workspace", items: [{ label: "Overview", path: "/dashboard", icon: LayoutDashboard }, { label: "Students", path: "/students", icon: Users }, { label: "Teachers", path: "/teachers", icon: GraduationCap }, { label: "Results", path: "/results", icon: ClipboardList }] },
   { label: "Understand", items: [{ label: "Analytics", path: "/analytics", icon: BarChart3 }, { label: "Attendance", path: "/attendance", icon: CalendarDays }, { label: "Assignments", path: "/assignments", icon: BookOpen }] },
   { label: "Share", items: [{ label: "Reports", path: "/reports", icon: FileText }, { label: "Settings", path: "/settings", icon: Settings }] },
 ];
