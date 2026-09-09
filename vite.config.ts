@@ -170,6 +170,11 @@ export default defineConfig({
   },
   server: {
     host: true,
+    // The managed preview proxy does not forward the local Vite websocket
+    // endpoint. Disable HMR client injection to prevent browser websocket
+    // connection errors while preserving live server reloads through the
+    // preview runtime.
+    hmr: false,
     allowedHosts: [
       ".manuspre.computer",
       ".manus.computer",
