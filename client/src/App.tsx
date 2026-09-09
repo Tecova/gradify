@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ClientDashboard from "./pages/ClientDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
+import Workspace from "./pages/Workspace";
 
 function Router() {
   return (
@@ -23,14 +24,14 @@ function Router() {
       <Route path="/client-dashboard" component={ClientDashboard} />
       <Route path="/admin-dashboard" component={AdminDashboard} />
       <Route path="/teachers" component={Teachers} />
-      <Route path="/dashboard" component={Dashboard} />
-      <Route path="/students" component={Dashboard} />
+      <Route path="/dashboard" component={ClientDashboard} />
+      <Route path="/students" component={Workspace} />
       <Route path="/results" component={Results} />
-      <Route path="/analytics" component={Dashboard} />
-      <Route path="/attendance" component={Dashboard} />
-      <Route path="/assignments" component={Dashboard} />
-      <Route path="/reports" component={Dashboard} />
-      <Route path="/settings" component={Dashboard} />
+      <Route path="/analytics" component={Workspace} />
+      <Route path="/attendance" component={Workspace} />
+      <Route path="/assignments" component={Workspace} />
+      <Route path="/reports" component={Workspace} />
+      <Route path="/settings" component={Workspace} />
       <Route component={Home} />
     </Switch>
   );

@@ -93,7 +93,7 @@ export default function Login() {
         return;
       }
       toast.success("You’re verified. Welcome back.");
-      setLocation("/dashboard");
+      setLocation("/client-dashboard");
     }, 450);
   };
 
@@ -112,7 +112,7 @@ export default function Login() {
         return;
       }
       toast.success("Welcome back to your teacher workspace.");
-      setLocation("/dashboard");
+      setLocation("/client-dashboard");
     }, 450);
   };
 
