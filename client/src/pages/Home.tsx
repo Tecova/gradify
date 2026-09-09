@@ -79,7 +79,7 @@ export default function Home() {
           </nav>
 
           <div className="hidden items-center gap-3 md:flex">
-            <button className="rounded-xl px-4 py-2.5 text-[13px] font-semibold text-[#716a80] transition hover:bg-[#f0edf7]" onClick={() => toast.info("Sign in is ready for your school workspace.")}>Sign in</button>
+            <Link href="/login" className="rounded-xl px-4 py-2.5 text-[13px] font-semibold text-[#716a80] transition hover:bg-[#f0edf7]">Sign in</Link>
             <button className="rounded-xl bg-[#6e52b8] px-4 py-2.5 text-[13px] font-semibold text-white shadow-[0_7px_16px_rgba(110,82,184,.18)] transition hover:-translate-y-0.5 hover:bg-[#5d439e]" onClick={() => setDemoOpen(true)}>Request a demo</button>
           </div>
 
