@@ -70,10 +70,10 @@ export default function Home() {
           </Link>
 
           <nav className="hidden items-center gap-8 text-[13px] font-medium text-[#817a91] md:flex">
+            <Link href="/" className="text-[#6e52b8]">Home</Link>
             <a href="#platform" className="transition-colors hover:text-[#6e52b8]">Platform</a>
-            <a href="#intelligence" className="transition-colors hover:text-[#6e52b8]">Intelligence</a>
-            <a href="#schools" className="transition-colors hover:text-[#6e52b8]">For schools</a>
-            <a href="#stories" className="transition-colors hover:text-[#6e52b8]">Stories</a>
+            <Link href="/about" className="transition-colors hover:text-[#6e52b8]">About</Link>
+            <Link href="/contact" className="transition-colors hover:text-[#6e52b8]">Contact</Link>
           </nav>
 
           <div className="hidden items-center gap-3 md:flex">
@@ -88,9 +88,10 @@ export default function Home() {
         {mobileOpen && (
           <div className="border-t border-[#ebe8f1] bg-white px-5 py-4 md:hidden">
             <div className="flex flex-col gap-4 text-sm font-medium text-[#716a80]">
+              <Link href="/" onClick={() => setMobileOpen(false)}>Home</Link>
               <a href="#platform" onClick={() => setMobileOpen(false)}>Platform</a>
-              <a href="#intelligence" onClick={() => setMobileOpen(false)}>Intelligence</a>
-              <a href="#schools" onClick={() => setMobileOpen(false)}>For schools</a>
+              <Link href="/about" onClick={() => setMobileOpen(false)}>About</Link>
+              <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact</Link>
               <button className="w-fit rounded-xl bg-[#6e52b8] px-4 py-2.5 text-white" onClick={() => setDemoOpen(true)}>Request a demo</button>
             </div>
           </div>
